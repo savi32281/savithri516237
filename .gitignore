@@ -1,0 +1,46 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+build/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Generated test artifacts
+generated/tests/*.spec.ts
+generated/page-objects/**/*.ts
+artifacts/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary
+.tmp/
+tmp/
+temp/
+
+# System
+Thumbs.db
+.DS_Store

@@ -1,0 +1,43 @@
+{
+  "name": "autonomous-ai-test-agent",
+  "version": "1.0.0",
+  "description": "Autonomous AI Playwright Test Script Generator with Gemini and MCP",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "start:headed": "tsx src/main.ts --headed",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "test": "playwright test",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "clean": "rimraf dist artifacts/reports artifacts/exploration artifacts/screenshots artifacts/traces artifacts/failures generated/tests generated/page-objects",
+    "prep": "npm install && npx playwright install chromium"
+  },
+  "keywords": [
+    "playwright",
+    "test-automation",
+    "ai",
+    "gemini",
+    "mcp",
+    "testing",
+    "agent"
+  ],
+  "author": "AI Test Automation",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
+    "playwright": "^1.40.1",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.7.0"
+  }
+}
