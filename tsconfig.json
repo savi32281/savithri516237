@@ -21,6 +21,6 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["node", "@playwright/test"]
   },
-  "include": ["src/**/*", "generated/**/*"],
-  "exclude": ["node_modules", "dist", "build"]
+  "include": ["generated", "tests", "test-data"]
+
 }
